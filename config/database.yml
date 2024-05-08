@@ -1,0 +1,17 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  port: 5461
+  username: postgres
+  password: Alfa06094
+  database: receptionist_doctor_portal_development
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+production:
+  <<: *default

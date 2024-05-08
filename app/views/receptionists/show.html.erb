@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @receptionist %>
+
+<div>
+  <%= link_to "Edit this receptionist", edit_receptionist_path(@receptionist) %> |
+  <%= link_to "Back to receptionists", receptionists_path %>
+
+  <%= button_to "Destroy this receptionist", @receptionist, method: :delete %>
+</div>
